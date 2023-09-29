@@ -77,7 +77,7 @@ jobs:
       - set-versions
     # prettier-ignore
     if: '! contains(inputs.tag, ''rc'')'
-    uses: RocketChat/helm-charts/.github/workflows/release.yml@master
+    uses: truworths-repo/helm-charts/.github/workflows/release.yml@master
     with:
       tag: ${{ inputs.tag }}
       chartVersion: ${{ needs.set-versions.outputs.chart-version}}
