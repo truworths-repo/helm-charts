@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  HELM_REPO: RocketChat/helm-charts
+  HELM_REPO: truworths-repo/helm-charts
 
 jobs:
   set-versions:
